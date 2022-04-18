@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tanggal 18 April 2022-->
+<!--10119175-->
+<!--Mochamad Galih Prasetya-->
+<!--IF-5-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/colorGreenD94" />
+    <corners android:radius="@dimen/_2sdp" />
+</shape>

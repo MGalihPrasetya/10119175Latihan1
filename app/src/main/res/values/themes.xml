@@ -77,4 +77,9 @@
         <item name="android:textColor">@color/colorTextGreen</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="TextRobotoMedium16Green" parent="RobotoMedium">
+        <item name="android:textColor">@color/colorTextGreen</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>
