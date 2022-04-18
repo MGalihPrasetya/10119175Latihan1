@@ -915,7 +915,146 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/ivPermission"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/permission"
+            android:src="@drawable/permission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
+        <ImageView
+            android:id="@+id/ivAttendance"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/attendance"
+            android:src="@drawable/attendance"
+            app:layout_constraintEnd_toStartOf="@+id/ivReport"
+            app:layout_constraintStart_toEndOf="@+id/ivPermission"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <ImageView
+            android:id="@+id/ivReport"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="42dp"
+            android:contentDescription="@string/report"
+            android:src="@drawable/book"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvAttendance"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/attendance"
+            app:layout_constraintEnd_toEndOf="@+id/ivAttendance"
+            app:layout_constraintStart_toStartOf="@+id/ivAttendance"
+            app:layout_constraintTop_toBottomOf="@+id/ivAttendance" />
+
+        <TextView
+            android:id="@+id/tvPermission"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/permission"
+            app:layout_constraintEnd_toEndOf="@+id/ivPermission"
+            app:layout_constraintStart_toStartOf="@+id/ivPermission"
+            app:layout_constraintTop_toBottomOf="@+id/ivPermission" />
+
+        <TextView
+            android:id="@+id/tvReport"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/report"
+            android:text="@string/report"
+            app:layout_constraintEnd_toEndOf="@+id/ivReport"
+            app:layout_constraintStart_toStartOf="@+id/ivReport"
+            app:layout_constraintTop_toBottomOf="@+id/ivReport" />
+
+        <ImageView
+            android:id="@+id/ivAgenda"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/agenda"
+            app:layout_constraintEnd_toEndOf="@+id/ivPermission"
+            app:layout_constraintStart_toStartOf="@+id/ivPermission"
+            app:layout_constraintTop_toBottomOf="@+id/tvPermission"
+            app:srcCompat="@drawable/agenda" />
+
+        <TextView
+            android:id="@+id/tvAgenda"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/agenda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivAgenda"
+            app:layout_constraintStart_toStartOf="@+id/ivAgenda"
+            app:layout_constraintTop_toBottomOf="@+id/ivAgenda" />
+
+        <ImageView
+            android:id="@+id/ivWiki"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/wiki"
+            app:layout_constraintEnd_toEndOf="@+id/ivReport"
+            app:layout_constraintStart_toStartOf="@+id/ivReport"
+            app:layout_constraintTop_toBottomOf="@+id/tvReport"
+            app:srcCompat="@drawable/wiki" />
+
+        <TextView
+            android:id="@+id/tvWiki"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/wiki"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivWiki"
+            app:layout_constraintStart_toStartOf="@+id/ivWiki"
+            app:layout_constraintTop_toBottomOf="@+id/ivWiki" />
+
+        <ImageView
+            android:id="@+id/ivBooking"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/booking"
+            app:layout_constraintEnd_toEndOf="@+id/ivAttendance"
+            app:layout_constraintStart_toStartOf="@+id/ivAttendance"
+            app:layout_constraintTop_toBottomOf="@+id/tvAttendance"
+            app:srcCompat="@drawable/book" />
+
+        <TextView
+            android:id="@+id/tvBooking"
+            style="@style/TextRobotoRegular14Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/booking"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivBooking"
+            app:layout_constraintStart_toStartOf="@+id/ivBooking"
+            app:layout_constraintTop_toBottomOf="@+id/ivBooking" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

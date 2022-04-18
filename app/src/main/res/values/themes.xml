@@ -82,4 +82,9 @@
         <item name="android:textColor">@color/colorTextGreen</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="TextRobotoRegular14Gray" parent="RobotoRegular">
+        <item name="android:textColor">@color/colorTextGrayIcon</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
